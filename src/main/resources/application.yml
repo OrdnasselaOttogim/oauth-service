@@ -1,0 +1,29 @@
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: 60d1dd65667d936c0ea5
+            client-secret: 0e6e3f5a9d50ffc0e728dd176a07d0757bf52c3c
+          google:
+            client-id: 832394866434-1v8f3madl7g5mllk4gdf5l3q8eah82u2.apps.googleusercontent.com
+            client-secret: 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
+  datasource:
+    password:
+    url: jdbc:postgresql://localhost:5432/test
+    username:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+
