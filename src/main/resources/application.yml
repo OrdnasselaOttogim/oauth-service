@@ -15,9 +15,9 @@ spring:
             client-id: 832394866434-1v8f3madl7g5mllk4gdf5l3q8eah82u2.apps.googleusercontent.com
             client-secret: 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
   datasource:
-    password:
-    url: jdbc:postgresql://localhost:5432/test
-    username:
+    password: ${SPRING_DATASOURCE_PASSWORD:password}
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://postgres:5432/job}
+    username: ${SPRING_DATASOURCE_USERNAME:postgres}
   jpa:
     hibernate:
       ddl-auto: update

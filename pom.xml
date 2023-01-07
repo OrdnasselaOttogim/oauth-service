@@ -145,6 +145,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>oauth-service</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
